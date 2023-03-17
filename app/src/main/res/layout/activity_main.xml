@@ -9,7 +9,8 @@
     <WebView
         android:id="@+id/web"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
+
     </WebView>
 
     <com.google.android.gms.ads.AdView
@@ -20,7 +21,6 @@
         android:layout_gravity="bottom|center"
         app:adSize="BANNER"
         app:adUnitId="ca-app-pub-3240856942766859/8357660725"
-        app:layout_constraintBottom_toBottomOf="@+id/web"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"></com.google.android.gms.ads.AdView>
