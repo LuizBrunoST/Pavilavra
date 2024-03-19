@@ -21,29 +21,22 @@
         <link rel="manifest" href="assets/img/Icones/manifest.json">
         <meta name="msapplication-TileColor" content="#b3e0ff">
         <meta name="msapplication-TileImage" content="assets/img/Icones/ms-icon-144x144.png">
-        <meta name="theme-color" content="#b3e0ff">
-        
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5GQK3ZWLV2"></script>
-        <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-5GQK3ZWLV2');
-        </script>
-        
-        
+        <meta name="theme-color" content="#b3e0ff">    
     </head>
 <body style="background:#42b0e5; width:360px !important;" onload="loading()">
     <div class="w3-container w3-center"><img src="assets/img/Logo1000x1000Pavilavra.png" width="100%"></div>
-    <div class="w3-container w3-blue" style="position: absolute; bottom:0; font-weight:bold;">
-        <p>Powred by <i>LUMATECH APP E GAMES | SCRIPT TUTORIAIS | LUIZ BRUNO</i> - &copy; 2021 Copyright</p>
+    <div class="w3-container w3-blue w3-bottom">
+        <p class="w3-small w3-opacity w3-center" id="footerInfo"></p>
     </div>
 </body>
 <script>
 function loading(){
+    var date = new Date();
+    const anoAtual = date.getFullYear();
+    var footerInfo = document.querySelector('#footerInfo');
+    footerInfo.innerHTML = `Powred by <i><a href="https://www.lumamax.com.br/" target="_blank">LUMAMAX</a></i> - &copy; ${anoAtual} Copyright`;
     setTimeout(function(){ window.location.href='Main.html'; }, 3000);
 }
+
 </script>
 </html>

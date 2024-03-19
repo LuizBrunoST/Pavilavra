@@ -34,11 +34,11 @@ window.onload = function(){
     
     sounds.levelComplete.src = myDomain+"levelComplete.mp3";
     sounds.levelStart.src = myDomain+"level_start.mp3";
-    sounds.right.src = myDomain+"wsnd/right.mp3";
+    sounds.right.src = myDomain+"right.mp3";
     sounds.wrong.src = myDomain+"wrong.mp3";
     sounds.select.src = myDomain+"select.mp3";
     sounds.shuffle.src = myDomain+"shuffle.mp3";
-    sounds.extraWord.src = myDomain+"wsnd/extra_word.ogg";
+    sounds.extraWord.src = myDomain+"extra_word.ogg";
     
     function play(x){
         if(canPlay){
